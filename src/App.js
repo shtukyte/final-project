@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import  './App.css';
+import './Coin.css';
+import FirstSection from './components/FirstSection';
+import Coins from './components/Coins';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+      <FirstSection/>
+      <Coins/>
+    </div>    
   );
-}
+  };
 
 export default App;

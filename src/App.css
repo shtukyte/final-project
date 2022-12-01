@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    margin:0;  
+    background: #2c2a2a;
+    background: linear-gradient(176deg,#2c2a2a 0%, #3f4950 80%);
+    background: -webkit-linear-gradient(176deg,#2c2a2a 0%, #3f4950 80%);
+    background: -moz-linear-gradient(176deg,#2c2a2a 0%, #3f4950 80%);
+    color: #f4f4f4;
+    font-family: 'Montserrat';
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.coin-search {
+  margin-bottom: 64px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.coin-text {
+  margin-bottom: 32px;
+  text-align: center;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.coin-input {
+padding-left: 16px;
+width: 60vh;
+height: 30px;
+border-radius: 20px;
+border: 1px solid white;
+text-align: center;
 }
+
+@media screen and (max-width: 960px) {
+  .coin-input {
+    width: 30vh;
+
+    }
+
+}
+
