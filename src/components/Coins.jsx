@@ -1,17 +1,19 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios'
-import  '../App.css';
-import Coin from '../Coin';
-import '../Coin';
-
+import  './styles/App.css';
+import Coin from './Coin';
+import './Coin';
 
 function Coins() {
   const [coins, setCoins] = useState ([]);
   const [search, setSearch] = useState ('');
 
+//https://www.coingecko.com/en/api//
+
+  const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=eur&order=market_cap_desc&per_page=100&page=1&sparkline=false'
 
   useEffect(() => {
-    axios.get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=eur&order=market_cap_desc&per_page=100&page=1&sparkline=false')
+    axios.get(url)
     .then(res => {
       setCoins(res.data);
     }).catch(error => console.log(error))

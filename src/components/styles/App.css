@@ -19,11 +19,11 @@ body{
 
 
 .coin-search {
-  margin-bottom: 64px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 64px;
 }
 
 .coin-text {
@@ -39,6 +39,8 @@ height: 30px;
 border-radius: 20px;
 border: 1px solid white;
 text-align: center;
+background-color: #2c2a2a;
+color: white;
 }
 
 @media screen and (max-width: 960px) {

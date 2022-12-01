@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
+
 
 const Coin = ({name, image, symbol, price, volume, priceChange}) => {
-  return (
+    return (
     <div className='container'>
         <div className='coin-row'>
             <div className=' coin'>
